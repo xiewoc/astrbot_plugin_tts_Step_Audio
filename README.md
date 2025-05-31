@@ -22,7 +22,7 @@
 
 ## for 1.0.0
 
-
+基础功能（tts，还在研究func_call），schema
 
 # 球球了，给孩子点个star吧！
 

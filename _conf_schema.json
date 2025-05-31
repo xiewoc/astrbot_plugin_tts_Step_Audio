@@ -1,0 +1,62 @@
+{
+	"if_preload":{
+		"description": "是否预加载模型",
+		"type": "bool",
+		"hint": "因为step_tts的模型加载时间较长，故预加载后会有较好的体验",
+		"obvious_hint": true,
+		"default":false
+	},
+	"if_remove_think_tag":{
+		"description": "是否移除<think></think>及里面的内容",
+		"type": "bool",
+		"default":false
+	},
+	"server_cfg":{
+		"description": "服务器配置",
+		"type": "object",
+		"items":{
+			"server_ip":{
+				"description": "服务器ip地址",
+				"type": "string",
+				"default":"127.0.0.1"
+			},
+			"if_seperate_serve":{
+				"description": "是否为分布式服务",
+				"type": "bool",
+				"hint":"适用于算力分离的情况",
+				"default":false
+			}
+		}
+	},
+    "gen_cfg":{
+        "description": "配置",
+        "type": "object",
+        "items": {
+            "speaker":{
+                "description": "说话人",
+                "type": "string",
+                "hint": "即在speakers_info.json里面的说话人名称",
+                "default": "绯莎"
+            },
+			"mood":{
+				"description": "说话心情",
+				"type": "string",
+				"options": ["高兴1", "高兴2", "生气1", "生气2", "悲伤1", "撒娇1"],
+				"default": "高兴1"
+			},
+			"language":{
+				"description": "语言",
+				"type": "string",
+				"options": ["中文", "英文", "韩语", "日语", "四川话", "粤语", "广东话"],
+				"default": "中文"
+			},
+			"speed":{
+				"description": "说话语速",
+				"type": "string",
+				"hint": "需要有sox",
+				"options": ["慢速1", "慢速2", "快速1", "快速2"],
+				"default": "慢速1"
+			}
+        }
+    }
+}

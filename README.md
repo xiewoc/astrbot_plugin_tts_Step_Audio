@@ -18,6 +18,14 @@
 
 `/tts`以开启/关闭文字转语音
 
+# 注意
+
+这个插件比较吃电脑性能与显存（如有），远高于官方所说1.5GB + 8GB
+
+如图：
+
+<img width="593" alt="image" src="https://github.com/user-attachments/assets/1826eccf-7bae-47ca-8a07-40f817a6519b" />
+
 # 更新内容
 
 ## for 1.0.0
